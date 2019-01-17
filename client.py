@@ -19,6 +19,7 @@ MESSAGE = "Hello, World!"
 #   - c:  Message Specific Channel
 #   - um: Toggle User Mute/Unmute
 #   - ui: Print User Info (ID, display name, channel memberships)
+#   - a:  Announce
 #   - y:  Yell
 #   - w:  Whisper
 #   - r:  Reply
