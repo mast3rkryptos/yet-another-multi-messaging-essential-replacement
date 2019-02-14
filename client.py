@@ -42,6 +42,8 @@ def send_message(msg):
 
 
 def main():
+    print "Client - Finished"
+    exit()
     s = " "
     while " " in s:
         s = raw_input("Username (no spaces):")

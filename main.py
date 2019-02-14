@@ -1,17 +1,14 @@
 # system imports
-import threading
+from threading import Thread
 
 # project imports
 import client
 import server
 
-#if __name__ == '__main__':
-client.main()
-
-#threads = []
-#serverThread = threading.Thread(target=server.main)
-#threads.append(serverThread)
-#serverThread.start()
-#clientThread = threading.Thread(target=client.main)
-#threads.append(clientThread)
-#clientThread.start()
+if __name__ == '__main__':
+    threadServer = Thread(target=server.main)
+    threadClient = Thread(target=client.main)
+    threadServer.start()
+    threadClient.start()
+    threadServer.join()
+    print "Finished"
