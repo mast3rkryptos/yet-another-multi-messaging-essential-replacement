@@ -74,7 +74,7 @@ class ClientApplication(tk.Frame):
         tk.Frame.__init__(self, master)
         self.grid(sticky=tk.N + tk.S + tk.E + tk.W)
         self.menu = Menu()
-        self.textDisplay = ScrolledText()
+        self.textDisplay = ScrolledText(state='disabled')
         self.textEntry = Entry()
         self.send = Button()
         self.create_widgets()
@@ -115,9 +115,12 @@ def connect():
 
 def send():
     print "Send"
+    self.textDisplay.
+
 
 def send_event(event):
     send()
+
 
 if __name__ == "__main__":
     ca = ClientApplication()
